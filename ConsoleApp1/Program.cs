@@ -16,19 +16,52 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World, this is the Sum of all numbers from the given Parameters.");
-            // Guard against missing command-line arguments to avoid IndexOutOfRangeException
-            if (args != null && args.Length > 0)
-            {
-                Console.WriteLine("Übergebene Argumente:");
-                for (int i = 0; i < args.Length; i++)
-                {
-                    Console.WriteLine($"  [{i}] {args[i]}");
-                }
-            }
-            else
+            // UTF-8 für das Zeichen '∈' sicherstellen
+            Console.OutputEncoding = Encoding.UTF8;
+
+            Console.WriteLine("Hello World, prüfe Zugehörigkeit zu ℕ (ℕ = {1,2,3,...}).");
+
+            if (args == null || args.Length == 0)
             {
                 Console.WriteLine("Es wurde kein Argument übergeben.");
+                return;
+            }
+
+            Console.WriteLine("Übergebene Argumente:");
+            // Liste zum Sammeln aller erfolgreich geparsten Integer-Argumente.
+            // - Enthält alle geparsten Werte (auch solche < 1), da die Zugehörigkeit
+            //   zu ℕ erst beim Ausgeben geprüft wird.
+            // - Dient später zur weiteren Auswertung (z. B. Berechnung der Gaußschen
+            //   Summe, falls genau ein positives Integer-Argument vorliegt).
+            var numbers = new List<int>();
+
+            for (int i = 0; i < args.Length; i++)
+            {
+                string a = args[i];
+                Console.Write($"Argument [{i}]: {a} → ");
+
+                if (int.TryParse(a, out int n))
+                {
+                    if (n >= 1)
+                        Console.WriteLine($"{n} ∈ ℕ");
+                    else
+                        Console.WriteLine($"{n} ∉ ℕ");
+
+                    numbers.Add(n);
+                }
+                else
+                {
+                    Console.WriteLine($"{a} ist kein Integer → {a} ∉ ℕ");
+                }
+            }
+
+            // Wenn genau ein Integer-Argument vorliegt, Gaußsche Summe berechnen
+            var validInts = numbers.Where(x => x >= 1).ToList();
+            if (validInts.Count == 1 && numbers.Count == 1)
+            {
+                int n = validInts[0];
+                long gaussSum = (long)n * (n + 1) / 2;
+                Console.WriteLine($"Gaußsche Summe 1..{n} = {gaussSum}");
             }
         }
     }

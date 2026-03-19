@@ -52,8 +52,8 @@
               "Title": "ConsoleApp1",
               "DocumentMoniker": "C:\\Users\\kxv26\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
               "RelativeDocumentMoniker": "ConsoleApp1\\ConsoleApp1.csproj",
-              "ToolTip": "C:\\Users\\kxv26\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
-              "RelativeToolTip": "ConsoleApp1\\ConsoleApp1.csproj",
+              "ToolTip": "C:\\Users\\kxv26\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj*",
+              "RelativeToolTip": "ConsoleApp1\\ConsoleApp1.csproj*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-03-18T22:53:45.37Z",
               "EditorCaption": ""
@@ -64,9 +64,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\kxv26\\source\\repos\\ConsoleApp1\\ConsoleApp1\\Program.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
-              "ToolTip": "C:\\Users\\kxv26\\source\\repos\\ConsoleApp1\\ConsoleApp1\\Program.cs",
-              "RelativeToolTip": "ConsoleApp1\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\kxv26\\source\\repos\\ConsoleApp1\\ConsoleApp1\\Program.cs*",
+              "RelativeToolTip": "ConsoleApp1\\Program.cs*",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAvwCEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-18T22:46:26.826Z",
               "EditorCaption": ""
