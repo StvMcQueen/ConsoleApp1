@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World");
+            // Guard against missing command-line arguments to avoid IndexOutOfRangeException
+            if (args != null && args.Length > 0)
+            {
+                Console.WriteLine("Das übergebene Argument ist: " + args[0]);
+            }
+            else
+            {
+                Console.WriteLine("Es wurde kein Argument übergeben.");
+            }
+        }
+    }
+}

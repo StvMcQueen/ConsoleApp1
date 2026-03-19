@@ -1,0 +1,81 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\kxv26\\source\\repos\\ConsoleApp1\\ConsoleApp1.UnitTests\\ConsoleApp1.UnitTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\kxv26\\source\\repos\\ConsoleApp1\\ConsoleApp1.UnitTests\\ConsoleApp1.UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kxv26\\source\\repos\\ConsoleApp1\\ConsoleApp1.UnitTests\\ConsoleApp1.UnitTests.csproj",
+        "projectName": "ConsoleApp1.UnitTests",
+        "projectPath": "C:\\Users\\kxv26\\source\\repos\\ConsoleApp1\\ConsoleApp1.UnitTests\\ConsoleApp1.UnitTests.csproj",
+        "packagesPath": "C:\\Users\\kxv26\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kxv26\\source\\repos\\ConsoleApp1\\ConsoleApp1.UnitTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kxv26\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {
+              "C:\\Users\\kxv26\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {
+                "projectPath": "C:\\Users\\kxv26\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "MSTest": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kxv26\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kxv26\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectName": "ConsoleApp1",
+        "projectPath": "C:\\Users\\kxv26\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}
